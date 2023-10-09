@@ -10,17 +10,6 @@ Organize your project into folders for better structure. Here's an example:
 Define Your Model (M):
 Create a model for the data you want to manipulate. In this example, we'll use Mongoose for working with MongoDB. Create models/Item.js:
 
-javascript
-Copy code
-const mongoose = require('mongoose');
-
-const itemSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  description: String,
-  price: Number,
-});
-
-module.exports = mongoose.model('Item', itemSchema);
 Create Your Controllers (C):
 Implement controller functions in controllers/itemController.js to handle CRUD operations:
 
